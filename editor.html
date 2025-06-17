@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Texto</title>
+    <link rel="stylesheet" href="ccs/estilos.css">
+</head>
+<body>
+ <div class="container">
+<h1>Editor de Texto Basico</h1>
+
+    <div class="toolbar">
+        <div class="btn-group">
+            <span class="label">Tamaño:</span>
+            <button class="size-btn" onclick="cambiarTamaño(10)">Pequeño</button>
+            <button class="size-btn" onclick="cambiarTamaño(18)">Mediano</button>
+            <button class="size-btn" onclick="cambiarTamaño(22)">Grande</button>
+</div>
+
+<div class="btn-group">
+    <span class="label">Color:</span>
+    <button class="color-red" onclick="cambiarColor('red')">Rojo</button>
+    <button class="color-blue" onclick="cambiarColor('blue')">Azul</button>
+    <button class="color-green" onclick="cambiarColor('green')">Verde</button>
+</div>
+
+<div class="btn-group">
+    <span class="label">Formato:</span>
+    <button class="format-btn" onclick="toggleNegrita()">N</button>
+    <button class="format-btn" onclick="toggleCursiva()">K</button>
+    <button class="format-btn" onclick="toggleSubrayado()">S</button>
+</div>
+    </div>
+<div id="editor" contenteditable="true">
+    Escribe tu texto aqui..
+</div>
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>
